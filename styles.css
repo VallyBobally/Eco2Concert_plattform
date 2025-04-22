@@ -1,0 +1,74 @@
+.background-image-wrapper {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-image: url('Eingabemaske_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.outer {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.leaflet-popup-content {
+  width: 500px !important;
+}
+
+#control {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+}
+
+#control1 {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  
+  /* Ensure clean text appearance */
+  opacity: 1;
+  zoom: 1;
+  transition: none;
+}
+
+#control2 {
+  /* Appearance */
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 250ms 500ms;
+}
+#control2:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+  text-align: justify;
+}
+
+.navbar-default {
+    background-color: #4f9287da;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+        a:hover, .navbar-default .navbar-nav > .active > a:focus {
+      color: white;
+      background-color: #4f9287da;
+}
+
